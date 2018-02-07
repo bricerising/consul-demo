@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: consul-demo
+  cloud:
+    consul:
+      host: http://local-consul-1.docker
+      port: 8500
