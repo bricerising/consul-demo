@@ -2,8 +2,8 @@ version: '3'
 services:
   consul:
     image: consul
-    ports: 
+    expose:
       - '8400'
       - '8500'
-      - '53'
-    command: 'agent -server -bootstrap-expect=1'
+      - '8600'
+    command: agent -server -bootstrap-expect=1 -ui -client 0.0.0.0
